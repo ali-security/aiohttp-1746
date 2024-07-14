@@ -30,7 +30,7 @@ jobs:
       run: |
         gh pr checkout ${{ github.event.pull_request.number }}
     - name: Setup Python
-      uses: actions/setup-python@v2
+      uses: MatteoH2O1999/setup-python@v4
     - name: Cache PyPI
       uses: actions/cache@v2.1.7
       with:
